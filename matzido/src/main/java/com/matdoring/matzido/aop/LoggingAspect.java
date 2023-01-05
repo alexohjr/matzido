@@ -32,12 +32,10 @@ public class LoggingAspect {
 
         long startAt = System.currentTimeMillis();
 
-        logger.info("----------> REQUEST : {}({}) = {}{}",
-                pjp.getSignature().getDeclaringTypeName(),
-                pjp.getSignature().getName(), params,
-                request.getRequestURL());
-
         logger.info("##### requestUrl : {}", request.getRequestURL());
+        logger.info("##### request : {}({}) = {}",
+                pjp.getSignature().getDeclaringTypeName(),
+                pjp.getSignature().getName(), params);
 
         Object result = pjp.proceed();
 
