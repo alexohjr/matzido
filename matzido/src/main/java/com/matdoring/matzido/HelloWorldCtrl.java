@@ -10,7 +10,7 @@ public class HelloWorldCtrl {
 
     @GetMapping("/hello")
     public String test() {
-        return "hello!";
+        return "hello!!!!";
     }
 
 
