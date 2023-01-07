@@ -37,7 +37,7 @@
         size="sm"
         @click="showSideBar"
     >
-      {{ isVisibleSideBar ? '닫힘' : '열림' }}
+      {{ isVisibleSideBar ? 'close' : 'open' }}
     </BButton>
   </div>
 </template>
